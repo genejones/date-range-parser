@@ -124,7 +124,7 @@ under the License.
 	}
 
 	function getRange(op, term1, term2, origin) {
-		if(op === "<" || op === "->" ) {
+		if(op === "<" || op === "->" || op == "to") {
 			if(term1 && !term2) {
 				return { start: term1.start, end: null };
 			} else if(!term1 && term2) {
